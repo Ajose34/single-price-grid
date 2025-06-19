@@ -1,0 +1,111 @@
+body{
+    font-family: 'Karla', sans-serif;
+    background-color: #E6EFF6;
+}
+.container{
+    border-radius: 10px;
+    box-shadow: 10px black ;
+    width: 634px;
+    height: 473px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1.5fr;
+    margin: 150px 300px;
+
+}
+.one{
+    border-radius: 10px 10px 0 0;
+    grid-column: span 2;
+    background-color: hsl(0, 0%, 100%); 
+}
+.two{
+    border-radius: 0 0 0 10px;
+    background-color: #2ab2af;
+    padding-top: 30px;
+}
+.three{
+    background-color: #4ABEBD;
+    border-radius: 0 0 10px 0 ;
+    padding-top: 30px;
+
+}
+h1{
+    color: #2ab2af;    padding-left: 30px;
+
+}
+h2{
+    color: #EBFFFF;    padding-left: 30px;
+
+}
+p{
+    color: #e5eff5;
+    font-size: 16px;    padding-left: 30px;
+
+}
+.one > p{
+    color: #98a6bd;    
+    font-size: 15.8px;     
+    line-height: 2rem;
+    width: 80%;
+
+}
+.one > h2{
+    color: #c0df34;    font-size: 16px;
+
+}
+button{
+    font-size: 16px;
+    width: 80%;
+    height: 48px;
+    border: none;
+    border-radius: 10px;
+    margin: 0 40px;
+    background-color: #BFDF32;
+    color: #e5eff5;
+}
+li{
+    list-style: none;
+    line-height: 1.3rem;
+    padding-left: 0;
+    color: #B3FDFC;
+    font-size: 16px;    
+}
+.price{
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+
+.attribution { font-size: 11px; text-align: center; color: #000;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 431px) {
+    .container{
+        margin: 64px 30px;
+        width: 100%;
+        height: auto;
+        margin-inline: auto;
+        display: block;
+    }
+    .one{
+        width: 80%;
+        padding-top: 30px;
+        border-radius: 0;
+        margin-inline: auto;
+        padding-bottom: 16px;
+    }
+    .two{
+        margin-top: -16px;
+        height: 14rem;
+        width: 80%;
+        border-radius: 0;
+        margin-inline: auto;
+
+    }
+    .three{
+        width: 80%;
+        border-radius: 0; 
+        margin-inline: auto;
+        height: 15rem;
+    }
+}
